@@ -19,7 +19,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static guru.qa.niffler.jupiter.User.UserType.WITH_FRIENDS;
 
-@Disabled
+//@Disabled
 public class SpendingWebTest extends BaseWebTest {
 
     static {

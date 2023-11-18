@@ -1,4 +1,4 @@
-## **Технологии, использованные в Niffler**
+## **Technologies used in Niffler**
 
 - [Spring Authorization Server](https://spring.io/projects/spring-authorization-server)
 - [Spring OAuth 2.0 Resource Server](https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/index.html)
@@ -182,7 +182,9 @@ Dmitriis-MacBook-Pro niffler-frontend % npm run build:windows
 
 Для этого зайти в меню Run -> Edit Configurations -> выбрать main класс -> указать Active profiles: local
 [Инструкция](https://stackoverflow.com/questions/39738901/how-do-i-activate-a-spring-boot-profile-when-running-from-intellij).
-
+```posh
+-Dspring.profiles.active=local
+```
 #### 4 Запустить сервис Niffler-auth c помощью gradle или командой Run в IDE:
 - 
 

@@ -26,10 +26,12 @@ public class UserQueueExtension implements BeforeEachCallback, AfterTestExecutio
         usersWithFriends.add(bindUser("dima", "12345"));
         usersWithFriends.add(bindUser("barsik", "12345"));
         usersQueue.put(User.UserType.WITH_FRIENDS, usersWithFriends);
+
         Queue<UserJson> usersInSent = new ConcurrentLinkedQueue<>();
         usersInSent.add(bindUser("bee", "12345"));
         usersInSent.add(bindUser("anna", "12345"));
         usersQueue.put(User.UserType.INVITATION_SENT, usersInSent);
+
         Queue<UserJson> usersInRc = new ConcurrentLinkedQueue<>();
         usersInRc.add(bindUser("valentin", "12345"));
         usersInRc.add(bindUser("pizzly", "12345"));
